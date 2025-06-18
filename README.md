@@ -38,9 +38,14 @@ Complete each procedurally generated track as quickly as possible. In two player
 
 ## File Structure
 
-- `index.html` – Main HTML file and UI
-- `style.css` – Game styling
-- `game.js` – Game logic and rendering
+- `index.html` – Home page with links to all games
+- `f1racer.html` – F1 Racer game page
+- `f1racer.js` – F1 Racer game logic
+- `robotbrawler.html` – Robot Brawler placeholder page
+- `robotbrawler.js` – Robot Brawler placeholder script
+- `style.css` – Shared styling for all games
+- `README.md` – Project documentation
+- `.gitignore` – Git ignore file
 
 ## Requirements
 

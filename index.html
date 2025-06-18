@@ -3,36 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>infinity Racer</title>
-    <meta name="viewport" content="width=900, initial-scale=1.0">
+    <title>Knight-Games</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Mode Selection Overlay -->
-    <div id="modeOverlay"
-        style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(30,30,30,0.92);z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-        <h2 style="color:#fff;margin-bottom:24px;">Choose Game Mode</h2>
-        <button id="singlePlayerBtn" style="font-size:1.3em;padding:12px 32px;margin:8px 0;">Single Player</button>
-        <button id="twoPlayerBtn" style="font-size:1.3em;padding:12px 32px;margin:8px 0;">Two Player</button>
-        <div style="margin-top:24px;color:#bbb;font-size:1em;">Player 1: Arrow keys + Space<br>Player 2: WASD + F
-        </div>
-    </div>
-    <h1>F1 Racer</h1>
-    <div id="levelDisplay" style="font-size:1.1em; font-weight:bold; margin-bottom:4px;">Level 1</div>
-    <div id="timer" style="font-size:1.3em; font-family:monospace; margin-bottom:8px;">Time: 0.00s</div>
-    <canvas id="gameCanvas" width="900" height="600"></canvas>
-    <div>
-        <label for="carColorPicker" style="font-weight:bold;">Choose Player 1 Car Color: </label>
-        <input type="color" id="carColorPicker" value="#ff0000" style="width:40px; height:32px; vertical-align:middle;">
-    </div>
-    <div>
-        <label for="carColorPicker2" style="font-weight:bold;">Choose Player 2 Car Color: </label>
-        <input type="color" id="carColorPicker2" value="#00ff44"
-            style="width:40px; height:32px; vertical-align:middle;">
-    </div>
-    <div id="message"></div>
-    <script src="game.js"></script>
+    <h1>Knight-Games</h1>
+    <h2>Choose Your Quest</h2>
+    <div><a href="f1racer.html"><button style="font-size:1.3em;padding:16px 48px;margin:16px 0;">Infinity
+                Racer</button></a></div>
+    <div><a href="robotbrawler.html"><button style="font-size:1.3em;padding:16px 48px;margin:16px 0;">Robot
+                Brawler</button></a></div>
+    <!-- Add more games here as needed -->
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+console.log("f1racer.js loaded.");
+
 /* --- Game Constants --- */
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -5,11 +7,17 @@ const ctx = canvas.getContext("2d");
 // --- Mode Selection ---
 let numPlayers = 1; // 1 or 2
 
+// Initialize F1 Racer UI and event listeners on DOMContentLoaded
 window.addEventListener("DOMContentLoaded", () => {
     // Mode selection overlay logic
     const overlay = document.getElementById("modeOverlay");
     const singleBtn = document.getElementById("singlePlayerBtn");
     const twoBtn = document.getElementById("twoPlayerBtn");
+
+    // Remove previous listeners by resetting .onclick
+    if (singleBtn) singleBtn.onclick = null;
+    if (twoBtn) twoBtn.onclick = null;
+
     if (singleBtn && twoBtn && overlay) {
         singleBtn.onclick = () => {
             numPlayers = 1;
@@ -21,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
             overlay.style.display = "none";
             startGame();
         };
+        overlay.style.display = "flex";
     } else {
         // Fallback: start single player if overlay/buttons not found
         startGame();
