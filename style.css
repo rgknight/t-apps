@@ -1,10 +1,30 @@
 body {
-    background: #222;
+    background: url('assets/dragon-background.png') center center / cover no-repeat, #222;
     color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+    pointer-events: none;
+}
+
+body>* {
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
